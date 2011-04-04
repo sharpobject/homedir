@@ -38,11 +38,10 @@ set transparency=35
 " indent guides are so cool
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
-IndentGuidesEnable
+let g:indent_guides_enable_on_vim_startup = 1
 
 "folding settings
 set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1
-
