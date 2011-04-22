@@ -53,5 +53,7 @@ nmap  <D-Down>      <C-W><Down>
 nmap  <D-Up>        <C-W><Up>
 
 set laststatus=2    " always show status line
-set mousefocus     " focus follows mouse
-set mouse=a         " mouse click and select behaves good in console vi(m)
+set mouse=a         " mouse click and select behaves well in console vi(m)
+
+" Default sass sw is 2, and from time to time it autoindents - ANNOYING. This fixes it.
+au FileType sass set sw=4
