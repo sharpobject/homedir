@@ -46,11 +46,15 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1
 
-" Easily move between many windows with cmd + arrow keys
+" Easily move between many windows with cmd/win + arrow keys
 nmap  <D-Right>     <C-W><Right>
 nmap  <D-Left>      <C-W><Left>
 nmap  <D-Down>      <C-W><Down>
 nmap  <D-Up>        <C-W><Up>
+nmap  <T-Right>     <C-W><Right>
+nmap  <T-Left>      <C-W><Left>
+nmap  <T-Down>      <C-W><Down>
+nmap  <T-Up>        <C-W><Up>
 
 set laststatus=2    " always show status line
 set mouse=a         " mouse click and select behaves well in console vi(m)
