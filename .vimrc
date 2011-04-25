@@ -46,18 +46,16 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1
 
-" Easily move between many windows with cmd/win + arrow keys
-nmap  <D-Right>     <C-W><Right>
-nmap  <D-Left>      <C-W><Left>
-nmap  <D-Down>      <C-W><Down>
-nmap  <D-Up>        <C-W><Up>
-nmap  <T-Right>     <C-W><Right>
-nmap  <T-Left>      <C-W><Left>
-nmap  <T-Down>      <C-W><Down>
-nmap  <T-Up>        <C-W><Up>
-
 set laststatus=2    " always show status line
 set mouse=a         " mouse click and select behaves well in console vi(m)
 
 " Default sass sw is 2, and from time to time it autoindents - ANNOYING. This fixes it.
 au FileType sass set sw=4
+
+set hlsearch        " highlights found string on search
+set incsearch       " search while typing
+filetype plugin indent on " this plugin is used for many more per-filetype plugins
+
+set guioptions-=m  " no menus
+set guioptions-=T  " no icons
+set guioptions+=c  " console dialog (vs popup)
