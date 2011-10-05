@@ -49,8 +49,6 @@ set foldlevel=1
 set laststatus=2    " always show status line
 set mouse=a         " mouse click and select behaves well in console vi(m)
 
-" Default sass sw is 2, and from time to time it autoindents - ANNOYING. This fixes it.
-au FileType sass set sw=4
 
 set hlsearch        " highlights found string on search
 set incsearch       " search while typing
@@ -59,3 +57,7 @@ filetype plugin indent on " this plugin is used for many more per-filetype plugi
 set guioptions-=m  " no menus
 set guioptions-=T  " no icons
 set guioptions+=c  " console dialog (vs popup)
+
+" Default sass sw is 2, and from time to time it autoindents - ANNOYING. This fixes it.
+autocmd FileType sass setlocal shiftwidth=4 tabstop=2
+autocmd FileType lua setlocal shiftwidth=2 tabstop=2
